@@ -1,0 +1,47 @@
+@use 'variables' as * ;
+
+/* general reset */
+* , *::after , *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 15px;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    background-color: $light-gray;
+    display: grid;
+    place-items : center;
+}
+.card{
+    background-color: $white ;
+    padding: 1rem;
+    max-width: 21.333333rem;
+    border-radius : 15px;
+    box-shadow: rgba(0, 0, 0, .2) 0 0 40px 0;
+    .qr-code{
+        height: 19.2rem;
+        border-radius : 10px;
+        margin-bottom: 2rem;
+        background-image: url('../images/image-qr-code.png');
+        background-repeat : no-repeat;
+        background-size : cover;
+        background-position: center;
+    }
+    .description{
+        text-align: center;
+        .title{
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color : $dark-blue ;
+        }
+        .text{
+            color : $grayish-blue ;
+            margin-bottom : 1rem;
+            padding: 1rem 0;
+        }
+    }
+} 

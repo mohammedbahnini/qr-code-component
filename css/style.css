@@ -1,0 +1,51 @@
+/* general reset */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  background-color: #d6e2f0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  max-width: 21.333333rem;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 40px 0;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 0 40px 0;
+}
+.card .qr-code {
+  height: 19.2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  background-image: url("../images/image-qr-code.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card .description {
+  text-align: center;
+}
+.card .description .title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #1f3251;
+}
+.card .description .text {
+  color: #7b879d;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
